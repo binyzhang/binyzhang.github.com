@@ -1,0 +1,80 @@
+
+// Typography
+$text-color:       #000 !default;
+$base-font-size:   12px !default;
+$base-line-height:  1.5 !default;
+$base-font-family: tahoma, arial, \5b8b\4f53 !default;
+$support-for-html5-tags-in-ie:  true !default;
+
+
+//clearfix
+@mixin clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: '\20';
+    display: table;
+    height:0;
+    overflow:hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// ie7 inline-block hack
+@mixin ie7-inline-block {
+  *display: inline;
+  *zoom: 1;
+}
+
+//size inc
+@mixin size($width: 1px, $height: 1px, $radius: false) {
+  width: $width;
+  height: $height;
+  @if type-of($radius) == number {
+    border-radius: $radius;
+  }
+}
+
+// Set text-size-adjust property for mobile devices
+@mixin text-size-adjust($value: 100%) {
+  @each $prefix in 'webkit', 'moz', 'ms' {
+    -#{$prefix}-text-size-adjust: $value;
+  }
+}
+
+//set background-image-liner-gradient
+@mixin background-image-liner-gradient($from,$end){
+	background-image: -webkit-linear-gradient(top, $from, $end);
+	background-image: -moz-linear-gradient(top, $from ,  $end);
+  background-image: -o-linear-gradient(top, $from, $end);
+  background-image: linear-gradient(top, $from, $end);
+  background-image: -ms-linear-gradient(top, $from, $end);
+}
+
+
+@mixin text-ellipsis{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  display:block;
+}
+@mixin opacity($opacity){
+  opacity:#{$opacity};
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity*100})";
+  filter: alpha(opacity=#{$opacity*100});
+}
+
+
+.clearfix{
+  @include clearfix;
+}
+
+.clear{
+  display:table;
+  height:0;
+  overflow:hidden;
+  clear:both;
+  line-height:0;
+}

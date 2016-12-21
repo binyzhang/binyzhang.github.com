@@ -1,0 +1,638 @@
+@charset "UTF-8";
+/*!
+ * Reset
+ */
+html {
+  color: #454545;
+  background: #f0f0f0; }
+
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  font-family: arial; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+input, select, textarea {
+  font-size: 1rem; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th {
+  text-align: inherit; }
+
+fieldset, img {
+  border: none; }
+
+img {
+  border: none; }
+
+iframe {
+  display: block; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+del {
+  text-decoration: line-through; }
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 500; }
+
+ol, ul, li {
+  list-style: none; }
+
+q:before, q:after {
+  content: ''; }
+
+sub, sup {
+  font-size: 0.75rem;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+a:hover {
+  text-decoration: underline; }
+
+ins, a {
+  text-decoration: none; }
+
+textarea {
+  resize: none;
+  overflow: auto; }
+
+input, textarea {
+  outline: none; }
+
+a {
+  color: #0081cb;
+  outline: none; }
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+  -webkit-appearance: none;
+  border-radius: none; }
+
+textarea {
+  -webkit-appearance: none; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: '\20';
+    display: table;
+    height: 0;
+    overflow: hidden; }
+  .clearfix:after {
+    clear: both; }
+
+.clear {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  line-height: 0; }
+
+.wish {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .wish .wish-bg {
+    _display: none;
+    width: 100%;
+    height: 100%;
+    background: url("../../images/za_bg.png") no-repeat center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%; }
+
+.wish-word {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 3.25rem;
+  left: 0rem; }
+  .wish-word .wish-content {
+    line-height: 0.9rem;
+    color: #fff;
+    text-align: center;
+    font-size: 0.7rem;
+    display: none; }
+
+.wish-bigball {
+  width: 11rem;
+  height: 13.7rem;
+  position: relative;
+  top: 7rem;
+  margin: 0 auto;
+  _background: url("../../images/wish_bigbaoll.png") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  _display: none; }
+  .wish-bigball .wish-bigballtop {
+    width: 10.875rem;
+    height: 10.875rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../../images/wish-balltou.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: none; }
+  .wish-bigball .wish-bigballcon {
+    width: 10rem;
+    height: 7.9rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 0.2rem;
+    background: url("../../images/wish-ballnei.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: none; }
+  .wish-bigball .wish-bigballbot {
+    width: 7.025rem;
+    height: 3.425rem;
+    position: absolute;
+    top: 9.9rem;
+    left: 2rem;
+    background: url("../../images/wish-balldi.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: none; }
+    .wish-bigball .wish-bigballbot .wish-z {
+      width: 3rem;
+      height: 2rem;
+      position: absolute;
+      top: 0.9rem;
+      left: 2rem;
+      background: url("../../images/wish_z.png") no-repeat center;
+      -webkit-background-size: cover;
+      background-size: cover;
+      opacity: 0; }
+
+.wish-prompt {
+  display: none;
+  width: 100%;
+  height: 0.75rem;
+  position: absolute;
+  top: 22rem;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem; }
+
+.wish-wishbtn {
+  display: none;
+  width: 100%;
+  height: 1.75rem;
+  position: absolute;
+  top: 24.5rem;
+  z-index: 2;
+  left: 0;
+  text-align: center; }
+  .wish-wishbtn .wish-makewish {
+    width: 5.5rem;
+    height: 1.95rem;
+    background: url("../../images/wish-xuxiaxinyuan.png") no-repeat center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    display: inline-block; }
+  .wish-wishbtn .wish-Invit-makewish {
+    width: 5.5rem;
+    height: 1.95rem;
+    margin-left: 1.125rem;
+    background: url("../../images/wish-yaoqingxuyuan.png") no-repeat center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    display: inline-block; }
+
+.small-ball1 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -4rem;
+  left: 0rem;
+  background: url("../../images/wish-bgamallball.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain; }
+
+.small-ball2 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -14rem;
+  left: 0;
+  background: url("../../images/wish-bgamallball2.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain; }
+
+.wish-writebg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0; }
+  .wish-writebg .wish-write {
+    width: 12.55rem;
+    height: 15.025rem;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    margin-left: -6.275rem;
+    background: url("../../images/wish-write.png") no-repeat center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .wish-writebg textarea {
+    font-size: 0.475rem;
+    border: none;
+    position: absolute;
+    width: 10.3rem;
+    height: 7.975rem;
+    outline: none;
+    line-height: 1.15rem;
+    border: none;
+    left: 0.875rem;
+    top: 3.15rem;
+    background: transparent; }
+  .wish-writebg .wish-writeclose {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .wish-writebg .wish-friendwrite {
+    width: 4.725rem;
+    height: 1.275rem;
+    position: absolute;
+    left: 1rem;
+    top: 12rem; }
+  .wish-writebg .wish-pushchi {
+    width: 4.725rem;
+    height: 1.275rem;
+    position: absolute;
+    left: 6.5rem;
+    top: 12rem; }
+
+.wish-radar {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: url("../../images/wish-radar.png") no-repeat center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%; }
+
+.wish-invitation-code {
+  display: none;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  font-size: 0.75rem;
+  color: #fff37f;
+  position: absolute;
+  top: 19.5rem;
+  left: 0;
+  line-height: 1.5rem; }
+
+.wish-code-con1 {
+  display: none;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  font-size: 0.525rem;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 21rem;
+  line-height: 0.775rem; }
+
+.wish-code-con2 {
+  display: none;
+  top: 21.75rem;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  font-size: 0.525rem;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  line-height: 0.775rem; }
+
+.wish-clickbtn {
+  width: 8rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 22rem;
+  left: 50%;
+  margin-left: -4rem;
+  background: url("../../images/wish-clock.png") center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  z-index: 99999999; }
+
+/*ceshi*/
+.wish-sendall {
+  display: none;
+  width: 8rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 23rem;
+  left: 50%;
+  margin-left: -4rem;
+  background: url("../../images/wish-send-all.png") center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  z-index: 9999999; }
+
+.person {
+  display: none;
+  width: 1.95rem;
+  height: 2.8rem;
+  position: absolute; }
+  .person img {
+    width: 2rem;
+    height: 1.8rem;
+    border-radius: 50%; }
+  .person span {
+    font-size: 0.475rem;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    width: 5em;
+    height: 1em;
+    display: inline-block; }
+
+.wish-share-to {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../images/wish-shareto.png") no-repeat center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  z-index: 999999999999; }
+
+.person1 {
+  top: 5rem;
+  left: 7.5rem; }
+
+.person2 {
+  top: 10rem;
+  left: 2.5rem; }
+
+.person3 {
+  top: 10rem;
+  left: 11.5rem; }
+
+.person4 {
+  top: 12.5rem;
+  left: 7.5rem; }
+
+.wish-mywish {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../../images/wish-mywish.png") no-repeat center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%; }
+  .wish-mywish .wish-mywish-close {
+    width: 1.15rem;
+    height: 1.15rem;
+    position: absolute;
+    top: 5.95rem;
+    right: 1.5rem; }
+  .wish-mywish .wish-mywish-share {
+    width: 4.8rem;
+    height: 1.35rem;
+    position: absolute;
+    top: 17rem;
+    left: 2.9rem; }
+  .wish-mywish .wish-mywish-reload {
+    width: 4.8rem;
+    height: 1.35rem;
+    position: absolute;
+    top: 17rem;
+    left: 8.5rem; }
+  .wish-mywish .wish-mywish-text {
+    width: 10.575rem;
+    height: 7.875rem;
+    position: absolute;
+    top: 7.95rem;
+    left: 2.825rem;
+    line-height: 1.125rem;
+    background: transparent;
+    font-size: 0.475rem;
+    border: none; }
+
+/*-----------------------------*/
+#earth {
+  position: absolute;
+  left: 50%;
+  top: 3.5rem;
+  margin-left: -6.65rem;
+  width: 13.3rem;
+  height: 13.1rem;
+  background: transparent;
+  border-radius: 50% 50% 0 0; }
+
+.radar {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: -moz-repeating-radial-gradient(#5f6670 3%, rgba(255, 255, 255, 0.1) 5%, rgba(255, 255, 255, 0.1) 25%);
+  background: -webkit-repeating-radial-gradient(#5f6670 3%, rgba(255, 255, 255, 0.1) 5%, rgba(255, 255, 255, 0.1) 25%);
+  background: repeating-radial-gradient(#5f6670 3%, rgba(255, 255, 255, 0.1) 5%, rgba(255, 255, 255, 0.1) 25%); }
+
+.h, .v {
+  position: absolute; }
+
+.h {
+  top: 149px;
+  height: 2px;
+  width: 100%;
+  background: #858C97; }
+
+.v {
+  left: 149px;
+  width: 2px;
+  height: 100%;
+  background: #858C97; }
+
+.scan {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(0deg, rgba(11, 153, 58, 0), rgba(137, 142, 139, 0.75));
+  border-radius: 100% 0 0 0;
+  animation: scan 4s linear infinite;
+  -webkit-animation: scan 4s linear infinite;
+  _border-right: 3px solid rgba(0, 255, 86, 0.5);
+  z-index: 999; }
+
+.dot {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 3px #00FF56;
+  opacity: 0;
+  background: #C3FFD3; }
+
+.dot1 {
+  top: 75px;
+  left: 75px;
+  animation: flash 4s linear infinite 3.5s;
+  -webkit-animation: flash 4s linear infinite 3.5s; }
+
+.dot2 {
+  top: 150px;
+  left: 250px;
+  animation: flash 4s linear infinite 1s;
+  -webkit-animation: flash 4s linear infinite 1s; }
+
+.dot3 {
+  top: 250px;
+  left: 250px;
+  animation: flash 4s linear infinite 1.5s;
+  -webkit-animation: flash 4s linear infinite 1.5s; }
+
+.dot4 {
+  top: 60px;
+  left: 230px;
+  animation: flash 4s linear infinite 0.5s;
+  -webkit-animation: flash 4s linear infinite 0.5s; }
+
+@keyframes scan {
+  0% {
+    transform: rotateZ(0deg);
+    transform-origin: 150px 150px; }
+  100% {
+    transform: rotateZ(360deg);
+    transform-origin: 150px 150px; } }
+@-webkit-keyframes scan {
+  0% {
+    transform: rotateZ(0deg);
+    transform-origin: 150px 150px; }
+  100% {
+    transform: rotateZ(360deg);
+    transform-origin: 150px 150px; } }
+@keyframes flash {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  30% {
+    opacity: 0; } }
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  30% {
+    opacity: 0; } }
+@keyframes jump {
+  0% {
+    transform: translateY(-10px); }
+  50% {
+    transform: translateY(-15px); } }
+@-webkit-keyframes jump {
+  0% {
+    transform: translateY(-10px); }
+  50% {
+    transform: translateY(-15px); } }
+/*------------------------------*/
+.ui-loader-default {
+  display: none; }
+
+.ui-mobile-viewport {
+  border: none; }
+
+.ui-page {
+  padding: 0;
+  margin: 0;
+  outline: 0; }
+
+.breath {
+  animation-name: breath;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: breath;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite; }
+
+@keyframes breath {
+  from {
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  to {
+    opacity: 0.5; } }
+@-webkit-keyframes breath {
+  from {
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  to {
+    opacity: 0.5; } }
+/*姘旀场*/
+.radius {
+  -webkit-animation: float ease-in-out 2s infinite;
+  animation: float ease-in-out 2s infinite; }
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+/*# sourceMappingURL=wishsquare.css.map */

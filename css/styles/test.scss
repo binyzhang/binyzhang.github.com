@@ -1,0 +1,15 @@
+@import "../common/mobileUtils";
+@import "../common/mreset";
+@import "../common/utils";
+
+html{
+  font-size:18px;
+}
+body{
+  background:#0081cb;
+}
+div{
+  width: px2rem(600px);
+  height: px2rem(600px);
+  background:red;
+}

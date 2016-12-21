@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <title>titlie</title>
+    <script src="js/src/drawfont.js"></script>
+    <link rel="stylesheet" href="css/styles/starrysky.css"/>
+    <script src="js/lib/jquery-2.0.0.min.js"></script>
+    <script src="js/lib/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body data-status="">
+
+<div class="sky-box" data-role="none" style="display: block;">
+    <div class="starrysky">
+        <div class="redball r-ball">
+            <div class="za_logo">
+                <div class="za_sign"></div>
+                <div class="za_shadow"></div>
+            </div>
+            <div class="persons">
+                <div class="jk man">
+                    <div class="msg infobg shake"></div>
+                    <div class="face" data-status="jk"></div>
+                </div>
+                <div class="jjh man">
+                    <div class="face" data-status="jjh"></div>
+                    <div class="msg infobg"></div>
+                </div>
+                <div class="yydr man">
+                    <div class="face" data-status="yydr"></div>
+                    <div class="msg infobg"></div>
+                </div>
+                <div class="xb man">
+                    <div class="face" data-status="xb"></div>
+                    <div class="msg infobg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="yellowball y-ball "></div>
+        <div class="blueball b-ball"></div>
+    </div>
+    <div class="detail">
+        <div class="mod-info">
+            <p class="title1"></p>
+            <p class="title2"></p>
+            <p class="title3"></p>
+        </div>
+    </div>
+    <div class="bottomword">
+        <p class="b-word"></p>
+    </div>
+</div>
+<div class="earth" style="display: none;">
+    <div class="earth_bg">
+        <div class="earth_scene"></div>
+        <div class="b-word">
+            <p class="shake_word breath">摇一摇,开启圣诞送礼吧!</p>
+        </div>
+    </div>
+    <div class="earth_snow"></div>
+</div>
+<div class="santa-man" style="display: none;">
+    <div class="santa-bg">
+        <!--<div class="light light1"></div>-->
+
+        <!--<div class="light light4"></div>-->
+        <!--<div class="distance">-->
+        <!--<div class="light light2"></div>-->
+        <!--<div class="light light3"></div>-->
+        <!--<div class="light light5"></div>-->
+        <!--</div>-->
+        <!--<div class="light light6"></div>-->
+        <div class="santa-light"></div>
+        <div class="sled-bg"></div>
+        <div class="sled">
+            <div class="santaonsled" style="display: none;"></div>
+        </div>
+        <div class="santa-oldman santa-fly" style="display: none;"></div>
+    </div>
+</div>
+<div class="scene" style="display: none;">
+    <div class="scene-bg">
+        <div class="bottomball"></div>
+        <div class="scene-ball">
+            <div class="big-mom person-rotate-on" sign-status="1">
+                <div class="dogmom"></div>
+                <div class="dogdaye"></div>
+                <div class="bigmom">
+                    <div class="bigmom-word"></div>
+                </div>
+                <div class="bigmom-kick">
+                </div>
+                <div class="bigmom-happy"></div>
+            </div>
+            <div class="oldwang person-rotate-on" sign-status="1">
+                <div class="oldw-sf">
+                    <div class="oldw-sf-word"></div>
+                </div>
+                <div class="oldw"></div>
+            </div>
+            <div class="xb person-rotate-on" sign-status="1">
+                <div class="xb-say1"></div>
+                <div class="xb-say2"></div>
+                <div class="xj-say"></div>
+                <div class="xj-word"></div>
+                <div class="xb-word"></div>
+                <div class="xb-begin"></div>
+                <div class="xb-end"></div>
+            </div>
+            <div class="lostphoneboy person-rotate-on" sign-status="1">
+                <div class="boylost"></div>
+                <div class="boytap"></div>
+                <div class="boygodness"></div>
+            </div>
+        </div>
+        <div class="santa-face-yydr santa-face">
+            <p>音娱达人圣诞老人</p>
+        </div>
+        <div class="santa-face-jjh santa-face">
+            <p>交际花圣诞老人</p>
+        </div>
+        <div class="santa-face-xb santa-face">
+            <p>学霸圣诞老人</p>
+        </div>
+        <div class="santa-face-jk santa-face">
+            <p>极客圣诞老人</p>
+        </div>
+        <div class="santa-come"></div>
+        <div class="shake-mask" style="display: none;">
+            <div class="hand shake-hand-all"></div>
+            <div class="boy-hand shake-hand-all"></div>
+            <div class="oldw-hand shake-hand-all"></div>
+            <div class="xb-hand shake-hand-all"></div>
+            <div class="bd"></div>
+            <div class="thq"></div>
+            <div class="linkman"></div>
+        </div>
+        <div class="bigmom-msg">
+            <p>有快牙，</p>
+            <p>随时随地极速免流量传输</p>
+            <p>热门广场舞资源</p>
+            <p>如花一般的我</p>
+            <p>岂是一般妖艳贱货能比的吗</p>
+            <p>公路斗舞，坟头蹦迪</p>
+            <p>分分钟教你做人</p>
+        </div>
+        <div class="lostboy-msg">
+            <p>苦追女神三年载</p>
+            <p>散尽工资卡中财</p>
+            <p>一朝换了新手机</p>
+            <p>空白怎么约出来</p>
+            <p>...</p>
+        </div>
+        <div class="swipe-word breath">向左滑开启下一场景</div>
+    </div>
+</div>
+<div class="wish" data-role="none" style="display: none;">
+    <div class="wish-bg">
+        <div class="wish-word">
+            <p class="wish-content">快牙星球上，每天都有上千达人“圣诞老人”    </p>
+            <p class="wish-content">免费共享热门资源，满足大家的愿望</p>
+            <p class="wish-content">12月23日到12月30日</p>
+            <p class="wish-content">快牙分享日</p>
+            <p class="wish-content">许下心愿，让上千达人满足你的心愿吧</p>
+            <p class="wish-content">12月25日登陆快牙看心愿是否满足哦</p>
+        </div>
+        <div class="wish-bigball">
+            <div class="wish-bigballtop"></div>
+            <div class="wish-bigballcon"></div>
+            <div class="wish-bigballbot">
+                <div class="wish-z"></div>
+            </div>
+        </div>
+        <p class="wish-prompt">点击气泡许愿抽奖</p>
+        <div class="wish-wishbtn">
+            <a href="javascript:;" class="wish-makewish"></a>
+            <a href="javascript:;" class="wish-Invit-makewish"></a>
+        </div>
+        <div class="small-ball2"></div>
+        <div class="small-ball1"></div>
+        <div class="wish-writebg">
+            <div class="wish-write">
+                    <textarea placeholder="(选填)点击可填写心愿语">
+                    </textarea>
+                <a href="javascript:;" class="wish-writeclose"></a>
+                <a href="javascript:;" class="wish-friendwrite"></a>
+                <a href="javascript:;" class="wish-pushchi"></a>
+            </div>
+        </div>
+    </div>
+    <div class="wish-radar">
+        <div id="earth">
+            <div class="radar">
+                <div class="circle">
+                    <div class="h"></div>
+                    <div class="v"></div>
+                    <div class="scan"></div>
+                    <div class="dot dot1"></div>
+                    <div class="dot dot2"></div>
+                    <div class="dot dot3"></div>
+                    <div class="dot dot4"></div>
+                </div>
+            </div>
+        </div>
+        <p class="wish-invitation-code">XXXXXXXXXXXX</p>
+        <p class="wish-code-con1">讲心愿码一键发送给达人后，24日请到快牙客户端兑换奖品</p>
+        <p class="wish-code-con2">(请截图保存或复制心愿码)</p>
+        <div class="wish-clickbtn"></div>
+        <div class="wish-sendall"></div>
+        <div class="person person1">
+            <img src="" alt=""/>
+            <span></span>
+        </div>
+        <div class="person person2">
+            <img src="" alt=""/>
+            <span></span>
+        </div>
+        <div class="person person3">
+            <img src="" alt=""/>
+            <span></span>
+        </div>
+        <div class="person person4">
+            <img src="" alt=""/>
+            <span></span>
+        </div>
+    </div>
+    <div class="wish-mywish">
+        <textarea  data-role="none" class="wish-mywish-text" disabled></textarea>
+        <a href="javascript:;" class="wish-mywish-close"></a>
+        <a href="javascript:;" class="wish-mywish-share"></a>
+        <a href="javascript:;" class="wish-mywish-reload"></a>
+    </div>
+    <div class="wish-share-to">
+    </div>
+    <div class="wish-share-to2">
+        <p>http://downloadb.dewmobile.net/Zapya/Activity/Apk/Kuaiya.apk</p>
+    </div>
+</div>
+<div class="mod-dialog-loading" data-role="none" style="display: block;">
+    <div class="mod-of">
+        <div class="loading-box">
+            <div class="loading-bar">
+                <div class="loading-item"></div>
+                <div class="loading-num">0%</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="controlbtn play"></div>
+<div class="controlbtn ban" id="btn"></div>
+<audio src="music/before.mp3" autoplay id="before"></audio>
+<audio src="music/deerrun.wav" id="deerrun"></audio>
+<audio src="music/after.mp3" id="after"></audio>
+<audio src="music/squaredance.mp3" id="squaredance"></audio>
+<audio src="music/bubblefloat.wav" id="bubblefloat"></audio>
+</body>
+<script src="js/lib/require.js" data-main="js/src/starrysky.js"></script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html{
+            font-size:100px;}
+        div{
+            width:3.2rem;
+            height:3.2rem;
+            background: #f00;
+        }
+    </style>
+    <script>
+        window.onresize=function () {
+            document.documentElement.style.fontSize =50 /320 * document.documentElement.clientWidth + 'px';
+        }
+    </script>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
