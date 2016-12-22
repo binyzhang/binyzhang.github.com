@@ -199,6 +199,8 @@ define(function(require,exports,module){
         //});
         var playBtn = document.getElementById('btn');
         var audio = document.getElementById('before');
+        audio.src='./music/before.mp3';
+        audio.play();
         function clicks() {
             playBtn.addEventListener('click',function(){
                 if(playBtn.className.indexOf('ban')!=-1){

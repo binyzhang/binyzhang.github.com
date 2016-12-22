@@ -1224,7 +1224,7 @@ body {
   .scene .lostphoneboy {
     width: 100%;
     height: 21.475rem;
-    background: url("../../images/za_lostphoneboybg.png") no-repeat top center;
+    background: url("../../images/za_lostphoneboybg-1.png") no-repeat top center;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
     position: absolute;
@@ -1645,13 +1645,13 @@ body {
     width: 1.15rem;
     height: 1.15rem;
     position: absolute;
-    top: 7.2rem;
+    top: 5rem;
     right: 1.75rem; }
   .wish-mywish .wish-mywish-share {
     width: 4.8rem;
     height: 1.35rem;
     position: absolute;
-    top: 15.575rem;
+    top: 17.575rem;
     left: 3.25rem; }
   .wish-mywish .wish-mywish-reload {
     width: 4.8rem;
@@ -1663,8 +1663,8 @@ body {
     width: 10.575rem;
     height: 7.875rem;
     position: absolute;
-    top: 7.95rem;
-    left: 2.825rem;
+    top: 7.5rem;
+    left: 3.3rem;
     line-height: 1.125rem;
     background: transparent;
     font-size: 0.475rem;
@@ -1822,7 +1822,7 @@ body {
     opacity: 1; }
   to {
     opacity: 0.5; } }
-/*姘旀场*/
+/*气泡*/
 .radius {
   -webkit-animation: float ease-in-out 2s infinite;
   animation: float ease-in-out 2s infinite; }
