@@ -183,6 +183,38 @@ define(function(require,exports,module){
     };
 
     // playControl
+    function auto(cb){
+        if (window.DeviceMotionEvent) {
+            window.addEventListener('devicemotion',aaa,false);
+        }
+
+        var cdf = 2000;
+        var last_update = 0;
+        var x, y, z, last_x = 0, last_y = 0, last_z = 0;
+        function aaa(eventData) {
+            var acceleration =eventData.accelerationIncludingGravity;
+            var curTime = new Date().getTime();
+            if ((curTime-last_update)> 10) {
+                var diffTime = curTime -last_update;
+                last_update = curTime;
+                x = acceleration.x;
+                y = acceleration.y;
+                z = acceleration.z;
+                var speed = Math.abs(x +y + z - last_x - last_y - last_z) / diffTime * 10000;
+                if (speed > cdf) {
+//                        alert("你中奖啦！");  // Do something
+//                    snowInit();
+//                    oBox.appendChild(canvas);
+//                    document.body.removeChild(document.getElementById('h1'));
+                    cb&&cb();
+
+                }
+                last_x = x;
+                last_y = y;
+                last_z = z;
+            }
+        }
+    }
     exports.playControl=function(obj,obj2) {
         //obj.on('tap',function(){
         //    if(obj.hasClass('ban')){
@@ -198,9 +230,46 @@ define(function(require,exports,module){
         //    }
         //});
         var playBtn = document.getElementById('btn');
+        var audiobg = new Audio();
         var audio = document.getElementById('before');
         audio.src='./music/before.mp3';
-        audio.play();
+        audio.loop = true;
+        audio.autoplay = true;
+        setInterval(function(){
+            audio.play();
+        });
+        auto(function(){
+            audio.play();
+        });
+        document.addEventListener('touchstart',function(){
+            audio.play();
+        },false);
+        document.addEventListener('DOMContentLoaded',function(){
+
+            auto(function(){
+                audio.play();
+            });
+        },false);
+        setTimeout(function(){
+            $(window).scrollTop(1);
+        },0);
+        document.getElementById('before').play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+                document.getElementById('before').play();
+            });
+        }, false);
+        document.addEventListener('DOMContentLoaded', function () {
+            function audioAutoPlay() {
+                var audio = document.getElementById('before');
+                audio.play();
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                    audio.play();
+                }, false);
+            }
+            audioAutoPlay();
+        });
+
         function clicks() {
             playBtn.addEventListener('click',function(){
                 if(playBtn.className.indexOf('ban')!=-1){
@@ -214,6 +283,7 @@ define(function(require,exports,module){
             },false);
         }
         clicks()
+    };
     };
 
 });
